@@ -3,7 +3,7 @@
   <main>
     <router-view v-slot="slotProps">
       <transition name="route" mode="in-out">
-        <component class="px-4" :is="slotProps.Component"></component>
+        <component class="px-4 xl:px-16 " :is="slotProps.Component"></component>
       </transition>
     </router-view>
   </main>
@@ -37,6 +37,11 @@ import { ref } from 'vue';
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 route-enter-from{
   opacity: 0;
   transform: translateY(-.4rem);

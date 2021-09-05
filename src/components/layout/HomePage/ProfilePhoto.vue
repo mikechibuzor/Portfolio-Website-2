@@ -1,6 +1,6 @@
 <template>
-  <div class=" flex items-end justify-end">
-    <div class="wrap xl:mr-20 relative xl:mb-5 flex flex-col items-center justify-center">
+  <div class="col-span-2 xl:col-span-1 flex items-center justify-center xl:items-end xl:justify-end order-1 xl:order-2">
+    <div class="wrap  xl:mr-20 relative xl:mb-5 flex flex-col items-center justify-center">
         <div class="photo shadow-xl overflow-hidden   border   col-span-1">
             <img src="../../../assets/images/profile-photo.jpg" alt="my-photo">
         </div>
@@ -17,8 +17,9 @@ export default {
 
 <style scoped>
 img{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    border-radius: 50%;
+    height: 95%;
     object-fit: cover;
 }
 p{
@@ -30,7 +31,7 @@ p{
         height: 25rem;
         border-radius: 50%;
         position: relative;
-        z-index: 2000;
+        z-index: 5;
         background: white;
         display: flex;
         box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, .2);
@@ -48,15 +49,12 @@ p{
         z-index: 2;
         border-radius: 50%;
     }
-    /* .photo::before{
-        position: absolute;
-        left: .4rem;
-        top: .2rem;
-        content: '';
-        width: 102.5%;
-        height: 102.5%;
-        background: white;
-        z-index: -14;
-        border-radius: 50%;
-    }  */
+    
+    /* responsive */
+    @media screen and (max-width: 768px){
+        .photo{
+            height: 18.5rem;
+            width: 18.5em;
+        }
+    }
 </style>

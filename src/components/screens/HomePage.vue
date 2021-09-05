@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper h-height90 w-screen">
+  <div class="wrapper xl:h-height90 w-screen">
       <main class="grid grid-cols-2 w-full h-full py-10 ">
           <text-effects></text-effects>
           <profile-photo></profile-photo>
@@ -20,6 +20,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

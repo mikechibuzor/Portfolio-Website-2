@@ -15,11 +15,11 @@
             </ul>
         <transition name="nav-list">
             <ul ref="ul" class=" absolute resp out xl:hidden resp left-0 shadow xl:shadow-none  dark:bg-green-500 rounded bg-gray-300 xl:bg-transparent xl:static flex flex-col xl:flex-row xl:w-full justify-start  ">
-                <li class=" mb-4 dark:text-yellow-300"><router-link to='/home'>Home</router-link></li>
-                <li class=" mb-4 dark:text-yellow-300"><router-link to='/about-me'>About me</router-link></li>
-                <li class=" mb-4 dark:text-yellow-300"><router-link to='/my-blog'>Blog</router-link></li>
-                <li class=" mb-4 dark:text-yellow-300"><router-link to='/my-works'>Works</router-link></li>
-                <li class=" mb-4 dark:text-yellow-300"><router-link to='/contact-me'>Contact me</router-link></li>
+                <li class=" mb-4 text-gray-400 dark:text-yellow-300"><router-link to='/home'>Home</router-link></li>
+                <li class=" mb-4 text-gray-400 dark:text-yellow-300"><router-link to='/about-me'>About me</router-link></li>
+                <li class=" mb-4 text-gray-400 dark:text-yellow-300"><router-link to='/my-blog'>Blog</router-link></li>
+                <li class=" mb-4 text-gray-400 dark:text-yellow-300"><router-link to='/my-works'>Works</router-link></li>
+                <li class=" mb-4 text-gray-400 dark:text-yellow-300"><router-link to='/contact-me'>Contact me</router-link></li>
             </ul>
         </transition>
         </nav>
@@ -105,7 +105,6 @@ export default {
     }
     nav  a.router-link-active {
         color: #000;
-            
         font-weight: bold;
     }
     html.dark nav  a.router-link-active {
@@ -120,7 +119,20 @@ export default {
         padding: 2rem;
         width: 50%;
         z-index: 30;
-        background-color: #CDBFBF;
+        background-color: #191970
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        nav  a.router-link-active {
+            color: white;
+        }  
+        a::before {
+            background: white;
+        }
+         nav  a.router-link-active::before{
+             background: white;
+         }
     }
   
   /* Animation for menu bar */
@@ -137,29 +149,30 @@ export default {
     }
     @keyframes slideIn{
         0%{
-            /* transform: translateX(-150%) translateY(-100%); */
             transform: translateY(-100%) translateX(-100%);
+            opacity: 0;
         }
         70%{
-            transform: translateY(10%) translateX(10%);
-            /* transform: translateX(0%) translateY(10%); */
-         
+            transform: translateY(10%) translateX(10%);         
+            opacity: .7;
         }
         100%{
             transform: translateY(0%) translateX(0%);
-            /* transform: translateX(0%) translateY(0%); */
             
             border-radius: 5% 50% 50% 50%;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+            box-shadow: 1px 1px 1px #191970;
+            opacity: 1;
         }
     }
     @keyframes slideOut{
         from{
             transform: translateX(0%) translateY(0%);
+            opacity: 1;
         }
         to{
                  transform: translateY(-100%) translateX(-100%);
-               box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+               box-shadow: 1px 1px 1px #191970;
+               opacity: 0;
         }
     }
     </style>

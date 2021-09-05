@@ -3,7 +3,7 @@
   <main>
     <router-view v-slot="slotProps">
       <transition name="route" mode="in-out">
-        <component :is="slotProps.Component"></component>
+        <component class="px-4" :is="slotProps.Component"></component>
       </transition>
     </router-view>
   </main>

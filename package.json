@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "typeit": "^8.0.2",
-    "vue": "^3.2.6",
-    "vue-router": "^4.0.11"
+    "vue": "^3.2.8",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.6.0",

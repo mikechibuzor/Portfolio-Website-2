@@ -32,9 +32,9 @@ p{
         border-radius: 50%;
         position: relative;
         z-index: 5;
-        background: white;
+        background: #191970;
         display: flex;
-        box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, .2);
+        box-shadow: 1px 0px 10px 1px #19197081;
     }
 
      .photo::after{
@@ -45,12 +45,18 @@ p{
         width: 102.5%;
         height: 102.5%;
         background: black;
-        opacity: .1;
+        opacity: .12;
         z-index: 2;
         border-radius: 50%;
     }
     
     /* responsive */
+    @media screen and (max-width: 768px){
+        .photo{
+            height: 18.5rem;
+            width: 18.5em;
+        }
+    }
     @media screen and (max-width: 768px){
         .photo{
             height: 18.5rem;

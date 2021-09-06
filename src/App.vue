@@ -11,27 +11,38 @@
 
 <script >
 
+import { onBeforeMount, computed, watch } from 'vue';
+import { useStore } from 'vuex';
+
+
+
 import TheHeader from './components/layout/header/TheHeader.vue';
 
-import { ref } from 'vue';
+
 
  export default{
    components:{
      TheHeader
    },
     setup(){
-    const counter = ref(0);
- 
+      
+      // const store = useStore();
+      // console.log(store);
 
-    // increase counter handler
-    const increaseCounter = ()=>{
-      counter.value++;
-    }
-    
-    return{
-      counter,
-      increaseCounter,
-    }
+      // // computed
+      // const theme = computed(()=> store.getters.getTheme);
+
+      // // watchers
+      // watch(theme, (newTheme)=>{ newTheme === "light"
+      //     ? document.querySelector("html").classList.remove("dark")
+      //     : document.querySelector("html").classList.add("dark")
+      // });
+
+      // // lifecycle hooks
+      // onBeforeMount(()=>{
+      //   store.dispatch("initTheme")
+      // })
+
   }
  }
 </script>

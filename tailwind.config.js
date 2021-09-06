@@ -17,6 +17,9 @@ module.exports = {
         height90: "90vh",
         height100: "100vh",
       },
+      colors: {
+        midNightBlue: "#191970",
+      },
     },
   },
   variants: {

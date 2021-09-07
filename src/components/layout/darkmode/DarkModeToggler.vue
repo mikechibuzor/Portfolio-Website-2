@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper pl-16 fixed bottom-2 md:bottom-16 xl:bottom-10">
+  <div class="wrapper pl-4 xl:pl-16 fixed bottom-2 md:bottom-16 xl:bottom-10">
       <div @click="darkModeToggler"  class=" cursor-pointer container-box h-full w-full relative flex justify-between bg-midNightBlue shadow-md drop-shadow-md px-1 rounded-full py-.5">
            <span class="light mr-1 ">
             <svg class="h-6 w-6 " fill="white" viewBox="0 0 24 24" stroke="currentColor">

@@ -1,13 +1,15 @@
 <template>
- <div >
+ <div>
     <the-header></the-header>
-  <main>
-    <router-view v-slot="slotProps">
-      <transition name="route" mode="in-out">
-        <component class="px-4 xl:px-16 " :is="slotProps.Component"></component>
-      </transition>
-    </router-view>
-  </main>
+    <main >
+      <router-view v-slot="slotProps">
+        <transition name="route" mode="in-out">
+          <component class="px-4 xl:px-16 " :is="slotProps.Component"></component>
+        </transition>
+      </router-view>
+    </main>
+    <dark-mode-toggler></dark-mode-toggler>
+    <iwuagwu-chibuzor></iwuagwu-chibuzor>
  </div>
 </template>
 
@@ -18,9 +20,10 @@ import { useStore } from 'vuex';
 
 import TheHeader from './components/layout/header/TheHeader.vue';
 
+
  export default{
    components:{
-     TheHeader
+     TheHeader,
    },
     setup(){
       

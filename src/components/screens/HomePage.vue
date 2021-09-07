@@ -3,7 +3,7 @@
       <main class="grid grid-cols-2 w-full h-full py-10 ">
           <text-effects></text-effects>
           <profile-photo></profile-photo>
-          <dark-mode-toggler></dark-mode-toggler>
+          <!-- <dark-mode-toggler></dark-mode-toggler> -->
       </main>
 
   </div>

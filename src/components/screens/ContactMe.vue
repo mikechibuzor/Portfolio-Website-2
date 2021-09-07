@@ -1,5 +1,7 @@
 <template>
-  <p>Contact me</p>
+    <main class="grid grid-cols-2 w-full h-full py-10 ">
+          
+    </main>
 </template>
 
 <script>

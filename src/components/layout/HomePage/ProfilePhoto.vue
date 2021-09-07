@@ -1,10 +1,10 @@
 <template>
   <div class="col-span-2 xl:col-span-1 flex items-center justify-center xl:items-end xl:justify-end order-1 xl:order-2">
     <div class="wrap  xl:mr-20 relative xl:mb-5 flex flex-col items-center justify-center">
-        <div class="photo shadow-xl overflow-hidden   border   col-span-1">
+        <div class="photo bg-midNightBlue dark:bg-yellow-500 shadow-xl overflow-hidden   border   col-span-1">
             <img src="../../../assets/images/profile-photo.jpg" alt="my-photo">
         </div>
-        <p class="font-bold text-lg md:text-3xl xl:text-xl  mt-2 ">Creative Writer</p>
+        <p class="font-bold text-lg md:text-3xl xl:text-xl  mt-2 dark:text-gray-400">Creative Writer</p>
     </div>
   </div>
 </template>
@@ -32,9 +32,14 @@ p{
         border-radius: 50%;
         position: relative;
         z-index: 5;
-        background: #191970;
+       
         display: flex;
         box-shadow: 1px 0px 10px 1px #19197081;
+    }
+
+    html.dark .photo{
+        
+         box-shadow: 1px 0px 10px 1px goldenrod;
     }
 
      .photo::after{

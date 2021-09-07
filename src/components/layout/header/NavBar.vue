@@ -91,7 +91,7 @@ export default {
         color: #FBBF24;
     }
      html.dark nav  a.router-link-active::before {
-        width: 100%;
+        /* width: 100%; */
         background: #FBBF24;
     }
      nav  a.router-link-active::before {

@@ -1,5 +1,6 @@
 <template>
-  <the-header></the-header>
+ <div >
+    <the-header></the-header>
   <main>
     <router-view v-slot="slotProps">
       <transition name="route" mode="in-out">
@@ -7,6 +8,7 @@
       </transition>
     </router-view>
   </main>
+ </div>
 </template>
 
 <script >
@@ -14,11 +16,7 @@
 import { onBeforeMount, computed, watch } from 'vue';
 import { useStore } from 'vuex';
 
-
-
 import TheHeader from './components/layout/header/TheHeader.vue';
-
-
 
  export default{
    components:{
@@ -26,22 +24,22 @@ import TheHeader from './components/layout/header/TheHeader.vue';
    },
     setup(){
       
-      // const store = useStore();
-      // console.log(store);
+      const store = useStore();
+      console.log(store);
 
-      // // computed
-      // const theme = computed(()=> store.getters.getTheme);
+      // computed
+      const theme = computed(()=> store.getters.getTheme);
 
-      // // watchers
-      // watch(theme, (newTheme)=>{ newTheme === "light"
-      //     ? document.querySelector("html").classList.remove("dark")
-      //     : document.querySelector("html").classList.add("dark")
-      // });
+      // watchers
+      watch(theme, (newTheme)=>{ newTheme === "light"
+          ? document.querySelector("html").classList.remove("dark")
+          : document.querySelector("html").classList.add("dark")
+      });
 
-      // // lifecycle hooks
-      // onBeforeMount(()=>{
-      //   store.dispatch("initTheme")
-      // })
+      // lifecycle hooks
+      onBeforeMount(()=>{
+        store.dispatch("initTheme")
+      })
 
   }
  }
@@ -52,6 +50,7 @@ import TheHeader from './components/layout/header/TheHeader.vue';
 body {
   font-family: "Quicksand", sans-serif;
 }
+
 
 route-enter-from{
   opacity: 0;

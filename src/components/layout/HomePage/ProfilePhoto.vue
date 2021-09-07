@@ -4,7 +4,7 @@
         <div class="photo shadow-xl overflow-hidden   border   col-span-1">
             <img src="../../../assets/images/profile-photo.jpg" alt="my-photo">
         </div>
-        <p class="font-bold text-lg mt-2 ">Creative Writer</p>
+        <p class="font-bold text-lg md:text-3xl xl:text-xl  mt-2 ">Creative Writer</p>
     </div>
   </div>
 </template>
@@ -51,13 +51,8 @@ p{
     }
     
     /* responsive */
-    @media screen and (max-width: 768px){
-        .photo{
-            height: 18.5rem;
-            width: 18.5em;
-        }
-    }
-    @media screen and (max-width: 768px){
+   
+    @media screen and (max-width: 767px){
         .photo{
             height: 18.5rem;
             width: 18.5em;

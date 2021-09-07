@@ -14,7 +14,7 @@
                 <li class=" xl:mt-8  text-gray-500"><router-link to='/contact-me'>Contact me</router-link></li>
             </ul>
         <transition name="nav-list">
-            <ul ref="ul" class=" absolute resp out xl:hidden resp left-0 shadow xl:shadow-none  dark:bg-green-500 rounded bg-gray-300 xl:bg-transparent xl:static flex flex-col xl:flex-row xl:w-full justify-start  ">
+            <ul ref="ul" class=" absolute resp  out xl:hidden resp left-0 shadow xl:shadow-none  dark:bg-green-500 rounded bg-gray-300 xl:bg-transparent xl:static flex flex-col xl:flex-row xl:w-full justify-start">
                 <li class=" mb-4 text-gray-400 dark:text-yellow-300"><router-link to='/home'>Home</router-link></li>
                 <li class=" mb-4 text-gray-400 dark:text-yellow-300"><router-link to='/about-me'>About me</router-link></li>
                 <li class=" mb-4 text-gray-400 dark:text-yellow-300"><router-link to='/my-blog'>Blog</router-link></li>
@@ -119,7 +119,7 @@ export default {
         padding: 2rem;
         width: 50%;
         z-index: 30;
-        background-color: #191970
+        background-color: #191970;
     }
 
     @media screen and (max-width: 768px) {

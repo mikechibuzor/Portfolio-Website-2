@@ -1,15 +1,17 @@
 <template>
   <div class="wrapper xl:h-height90 w-screen">
     <main class="h-full w-full pt-5 ">
-      <div class="border-decoration border-2 bg-gray-50 dark:bg-gray-700 border-gray-100 dark:border-gray-400 px-28 pt-12 h-full w-full rounded">
+      <div class="border-decoration border bg-gray-100 dark:bg-darkGrey border-gray-100 dark:border-gray-400 px-28 pt-12 h-full w-full rounded">
         <div class="first-half">
           <div class="profile-photo w-36 items-center flex flex-col">
-            <div class="photo-frame border relative border-midNightBlue h-height20 w-full"></div>
-            <p class="text-xs mt-1">Creative Writer</p>
+            <div class="photo-frame border relative border-midNightBlue h-height20 w-full">
+              <img class="h-full w-full object-cover" src="../../assets/images/profile-photo.jpg" alt="my-photo">
+            </div>
+            <p class="text-xs mt-1 tracking-wider shadow-inner">Creative Writer</p>
           </div>
         </div>
         <div class="second-half  mt-10">
-          <p class="text-justify about-me-text text-lg dark:text-gray-300">
+          <p class="text-justify about-me-text text-lg dark:text-gray-400">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ipsum amet quibusdam libero, vel dicta dolorum atque praesentium tempore reprehenderit, error exercitationem fugit expedita sequi hic at voluptates odit sapiente!
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ipsum amet quibusdam libero, vel dicta dolorum atque praesentium tempore reprehenderit, error exercitationem fugit expedita sequi hic at voluptates odit sapiente!
             Lorem ipsum dolor sit amet consectetur, adipisicing elit adipisicing eli adipisicing eli adipisicing eli. amet consectetur, adipisicing elit... 
@@ -60,7 +62,7 @@ export default {
   /* font-family: 'Sacramento', cursive; */
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-weight: 600;
+  /* font-weight: 600; */
   /* opacity: .9; */
 }
 h3{
@@ -76,10 +78,14 @@ h3{
     top: 50%;
     transform: translate(-50% ,-50%);
   }
+  
+  .second-half p,
+  h3,
+  ul li{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
+  }
 
     html.dark svg path{
-    /* stroke: #FBBF24; */
-    /* fill: #FBBF24; */
     fill: rgba(209, 213, 219, 1);
   }
 </style>

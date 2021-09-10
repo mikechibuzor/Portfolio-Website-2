@@ -7,11 +7,22 @@
         </div>
         <nav ref="nav" class="w-full  xl:block ">
             <ul  class=" hidden w-full xl:bg-transparent static xl:flex xl:items-center xl:justify-between flex-col xl:flex-row xl:w-full justify-start  ">
-                <li class=" xl:mt-8  text-gray-500"><router-link to='/home'>Home</router-link></li>
-                <li class=" xl:mt-8  text-gray-500"><router-link to='/about-me'>About me</router-link></li>
-                <li class=" xl:mt-8  text-gray-500"><router-link to='/my-blog'>Blog</router-link></li>
-                <li class=" xl:mt-8  text-gray-500"><router-link to='/my-works'>Works</router-link></li>
-                <li class=" xl:mt-8  text-gray-500"><router-link to='/contact-me'>Contact me</router-link></li>
+                <li class=" xl:mt-8  text-gray-500">
+                    <router-link to='/home'>Home</router-link>
+                </li>
+                <li class=" xl:mt-8  text-gray-500">
+                    <router-link to='/about-me'>About me</router-link>
+                </li>
+                <li class=" xl:mt-8  text-gray-500">
+                    <router-link to='/my-works'>Works</router-link>
+                    
+                </li>
+                <li class=" xl:mt-8  text-gray-500">
+                    <router-link to='/my-blog'>Blog</router-link>
+                </li>
+                <li class=" xl:mt-8  text-gray-500">
+                    <router-link to='/contact-me'>Contact me</router-link>
+                </li>
             </ul>
         <transition name="nav-list">
             <ul ref="ul" class=" absolute resp  out xl:hidden resp left-0 shadow xl:shadow-none  dark:bg-green-500 rounded bg-gray-300 xl:bg-transparent xl:static flex flex-col xl:flex-row xl:w-full justify-start">

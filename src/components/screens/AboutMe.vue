@@ -1,13 +1,13 @@
 <template>
-  <div class="wrapper xl:h-height90 w-screen">
+  <div class="wrapper h-auto xl:h-height90 w-screen">
     <main class="h-full w-full pt-5 ">
-      <div class="border-decoration border bg-gray-100 dark:bg-darkGrey border-gray-100 dark:border-gray-400 px-28 pt-12 h-full w-full rounded">
+      <div class="border-decoration pb-5 xl:pb-0 mb-5 xl:mb-0 border xl:bg-gray-100 transition-all duration-300 ease-in-out dark:bg-darkGrey border-gray-100 dark:border-gray-400 px-4 xl:px-28 pt-12 xl:h-full w-full rounded">
         <div class="first-half">
           <div class="profile-photo w-36 items-center flex flex-col">
-            <div class="photo-frame border relative border-midNightBlue h-height20 w-full">
+            <div class="photo-frame border relative border-midNightBlue dark:border-gray-700 h-height20 w-full">
               <img class="h-full w-full object-cover" src="../../assets/images/profile-photo.jpg" alt="my-photo">
             </div>
-            <p class="text-xs mt-1 tracking-wider shadow-inner">Creative Writer</p>
+            <p class="text-xs mt-3 tracking-wider shadow-inner dark:text-gray-400">Creative Writer</p>
           </div>
         </div>
         <div class="second-half  mt-10">
@@ -29,18 +29,17 @@
             </span>
           </p>
         </div>
-         <div class="bottom mt-10 h-height10 w-full flex justify-end ">
-           <div>
-             <h3 class="text-2xl font-bold dark:text-gray-300">Certifications</h3>
-             <ul class="text-sm mt-1 text-gray-700 dark:text-gray-300">
-               <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-               <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-               <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+         <div class="bottom mt-10  w-full flex justify-end ">
+           <div class="">
+             <h3 class="text-2xl text-center xl:text-left font-bold dark:text-gray-400">Certifications</h3>
+             <ul class="text-sm mt-1  text-gray-700  dark:text-gray-400">
+               <li >Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+               <li >Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+               <li >Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
              </ul>
            </div>
          </div>
-      </div>
-     
+      </div>     
     </main>
   </div>
 </template>
@@ -77,6 +76,15 @@ h3{
     left: 50%;
     top: 50%;
     transform: translate(-50% ,-50%);
+  }
+
+  html.dark .photo-frame::after{
+    box-shadow: 0 0.5px 6px 4px rgb(245, 158, 11),
+         0 1px 8px 6px rgba(245, 158, 11, .3);
+  }
+
+  html.dark .photo-frame::after{
+    border: 1px solid rgb(55, 65, 81);
   }
   
   .second-half p,

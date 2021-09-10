@@ -75,7 +75,7 @@ export default {
     }
 
     // computed
-    const fillRed = computed( ()=>  show.value ? 'red' : ''  );
+    const fillRed = computed( ()=>  show.value ? 'red' : '#8CA2B0'  );
 
     return{
       show,

@@ -1,7 +1,7 @@
 <template>
  <div>
     <the-header></the-header>
-    <main >
+    <main class=" overflow-hidden" >
       <router-view v-slot="slotProps">
         <transition name="route" mode="in-out">
           <component class="px-4 xl:px-16 mb-8 xl:mb-0" :is="slotProps.Component"></component>

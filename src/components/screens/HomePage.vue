@@ -4,7 +4,6 @@
           <text-effects></text-effects>
           <profile-photo></profile-photo>
       </main>
-
   </div>
 </template>
 

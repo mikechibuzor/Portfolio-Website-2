@@ -1,21 +1,30 @@
 <template>
   <div class="wrapper">
     <main class="relative" >
-      <div class="side-navigation  fixed  border w-1/5 h-height90"></div>
-      <div class="main-content border bg-red-50 w-4/5 h-height100"></div>
+      <side-navigation></side-navigation>
+      <div class="main-content border bg-red-50 w-4/5 h-height100">
+        <router-view>
+        
+        </router-view>
+      </div>
+      
     </main>
   </div>
 </template>
 
 <script>
+import SideNavigation from '../layout/works/SideNavigation.vue';
 export default {
-
+  components:{
+    SideNavigation,
+  }
 }
 </script>
 
 <style scoped>
 
 .side-navigation{
+  position: fixed;
   width: 14.5%;
 
 }

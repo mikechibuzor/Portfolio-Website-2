@@ -6,6 +6,11 @@ import MyBlog from "../components/screens/MyBlog.vue";
 import MyWorks from "../components/screens/MyWorks.vue";
 import ContactMe from "../components/screens/ContactMe.vue";
 
+// sub components
+import MyBooks from "../components/layout/works/MyBooks.vue";
+import MyArticles from "../components/layout/works/MyArticles.vue";
+import MyPoems from "../components/layout/works/MyPoems.vue";
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -25,6 +30,21 @@ const router = createRouter({
     {
       path: "/my-works",
       component: MyWorks,
+      children: [
+        {
+          path: "books",
+          component: MyBooks,
+          alias: "/my-works",
+        },
+        {
+          path: "poems",
+          component: MyPoems,
+        },
+        {
+          path: "articles",
+          component: MyArticles,
+        },
+      ],
     },
     {
       path: "/contact-me",

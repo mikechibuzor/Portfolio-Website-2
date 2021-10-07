@@ -2,7 +2,7 @@
   <div class="wrapper">
     <main class="relative" >
       <side-navigation></side-navigation>
-      <div class="main-content border bg-red-50 w-4/5 h-height100">
+      <div class="main-content border  w-4/5 ">
         <router-view>
         
         </router-view>
@@ -24,14 +24,14 @@ export default {
 <style scoped>
 
 .side-navigation{
-  position: fixed;
   width: 14.5%;
 
 }
   .main-content{
     width: 83%;
     margin-left: 16%;
-    height: 150vh;
+    height: auto;
+    /* height: 150vh; */
     
   }
 </style>

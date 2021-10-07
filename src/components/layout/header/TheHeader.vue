@@ -27,17 +27,20 @@ export default {
         // methods
         const fixedHeaderHandler = ()=>{
             const docScrollTop = document.documentElement.scrollTop;
-            const mobileScreenCheck = window.innerWidth;
+            const deviceScreenCheck = window.innerWidth;
            
-            if(mobileScreenCheck > 768){
-              if(docScrollTop > 100){
+          //  for desktop screens and beyond
+            if(deviceScreenCheck > 768){
+              if(docScrollTop > 1200){
                 fixedHeader.value = true;
             }
               else{
                 fixedHeader.value = false;
               }
             }else{
-              if(docScrollTop > 150){
+              // for mobile screens and below
+              if(docScrollTop > 200){
+              
                 fixedHeader.value = true;
             }
               else{

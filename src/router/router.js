@@ -7,7 +7,7 @@ import MyWorks from "../components/screens/MyWorks.vue";
 import ContactMe from "../components/screens/ContactMe.vue";
 
 // sub components
-import MyBooks from "../components/layout/works/MyBooks.vue";
+import MyBooks from "../components/layout/works/mybooks/MyBooks.vue";
 import MyArticles from "../components/layout/works/MyArticles.vue";
 import MyPoems from "../components/layout/works/MyPoems.vue";
 

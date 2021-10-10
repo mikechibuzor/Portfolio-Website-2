@@ -62,5 +62,7 @@ p{
             height: 18.5rem;
             width: 18.5em;
         }
+
+        
     }
 </style>

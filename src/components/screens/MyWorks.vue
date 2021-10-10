@@ -2,7 +2,7 @@
   <div class="wrapper">
     <main class="relative" >
       <side-navigation></side-navigation>
-      <div class="main-content border  w-4/5 ">
+      <div class="main-content  w-4/5 ">
         <router-view>
         
         </router-view>
@@ -25,7 +25,6 @@ export default {
 
 .side-navigation{
   width: 14.5%;
-
 }
   .main-content{
     width: 83%;
@@ -33,5 +32,16 @@ export default {
     height: auto;
     /* height: 150vh; */
     
+  }
+
+  @media screen and (max-width: 768px){
+    .side-navigation{
+      width: 100%;
+    }
+
+    .main-content{
+      width: 100%;
+      margin: 0;
+    }
   }
 </style>
